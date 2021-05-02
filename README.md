@@ -1,3 +1,8 @@
+[![Build Status - GitHub Actions][gha-badge]][gha-ci]
+[![semantic-release][semantic-release-badge]][semantic-release]
+[![npm][npm-version-badge]][npm]
+[![npm][npm-license-badge]][npm]
+
 # PushAndWaitQueue
 
 A simple Promise based queue, that allows you to push(enqueue) actions and wait till it gets to their turn before resolving or also wait for the entire queue to be empty before resolving.
@@ -138,3 +143,11 @@ Automatically fixes any lint errors encountered.
 ### `yarn build:watch`
 
 Run [build script](#yarn-build) in watch mode.
+
+[gha-badge]: https://github.com/theoomoregbee/push-and-wait-queue/actions/workflows/test.yml/badge.svg
+[gha-ci]: https://github.com/theoomoregbee/push-and-wait-queue/actions/workflows/test.yml
+[semantic-release-badge]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
+[semantic-release]: https://github.com/semantic-release/semantic-release
+[npm-version-badge]: https://img.shields.io/npm/v/push-and-wait-queue.svg
+[npm]: https://www.npmjs.com/package/push-and-wait-queue
+[npm-license-badge]: https://img.shields.io/npm/l/push-and-wait-queue.svg
