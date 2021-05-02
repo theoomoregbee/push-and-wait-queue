@@ -1,0 +1,49 @@
+{
+  "name": "rollup-typescript-lib-starter",
+  "version": "1.0.0",
+  "description": "Just a boilerplate for building a library with TS + Github action for testing and releasing",
+  "main": "build/index.js",
+  "scripts": {
+    "start": "run-p build:watch test:watch",
+    "build": "rollup -c",
+    "build:watch": "rollup -cw",
+    "lint": "ts-standard",
+    "lint:fix": "ts-standard --fix",
+    "test": "yarn lint && env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha",
+    "test:watch": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theoomoregbee/rollup-typescript-lib-starter.git"
+  },
+  "keywords": [
+    "rollup",
+    "typescript",
+    "ts",
+    "starter",
+    "boilerplate",
+    "github",
+    "action",
+    "release",
+    "library"
+  ],
+  "author": "Theophilus Omoregbee <theo4u@ymail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theoomoregbee/rollup-typescript-lib-starter/issues"
+  },
+  "homepage": "https://github.com/theoomoregbee/rollup-typescript-lib-starter#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.17",
+    "@types/mocha": "^8.2.2",
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2",
+    "npm-run-all": "^4.1.5",
+    "rollup": "^2.46.0",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "ts-node": "^9.1.1",
+    "ts-standard": "^10.0.0",
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.4"
+  }
+}
