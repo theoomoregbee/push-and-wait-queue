@@ -1,5 +1,5 @@
 {
-  "name": "rollup-typescript-lib-starter",
+  "name": "push-and-wait-queue",
   "version": "1.0.0",
   "description": "Just a boilerplate for building a library with TS + Github action for testing and releasing",
   "main": "build/index.js",
@@ -14,25 +14,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/theoomoregbee/rollup-typescript-lib-starter.git"
+    "url": "git+https://github.com/theoomoregbee/push-and-wait-queue.git"
   },
   "keywords": [
-    "rollup",
+    "queue",
+    "promise",
+    "promise-based-queue",
     "typescript",
     "ts",
-    "starter",
-    "boilerplate",
-    "github",
-    "action",
-    "release",
-    "library"
+    "library",
+    "browser"
   ],
   "author": "Theophilus Omoregbee <theo4u@ymail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/theoomoregbee/rollup-typescript-lib-starter/issues"
+    "url": "https://github.com/theoomoregbee/push-and-wait-queue/issues"
   },
-  "homepage": "https://github.com/theoomoregbee/rollup-typescript-lib-starter#readme",
+  "homepage": "https://github.com/theoomoregbee/push-and-wait-queue#readme",
   "devDependencies": {
     "@types/chai": "^4.2.17",
     "@types/mocha": "^8.2.2",
