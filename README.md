@@ -2,7 +2,7 @@
 
 A simple Promise based queue, that allows you to push(enqueue) actions and wait till it gets to their turn before resolving or also wait for the entire queue to be empty before resolving.
 
-> Queue up [idempotent operations](https://en.wikipedia.org/wiki/Idempotence) that can run simultaneously and return the same value even when there's a dependency that can cause the operation to return different value. For example, you can queue up all calls to find or create an entity if not available, if available return the value. If the call is run simultaneously, we might end up with a lot of created entities. With Queue, you can add any call to the queue, so they are waiting for the first find or create operation to be done before returning the entity. see [tests](/tests)
+> Queue up [idempotent operations](https://en.wikipedia.org/wiki/Idempotence) that can run simultaneously and return the same value even when there's a dependency that can cause the operation to return different value. For example, you can queue up all calls to find or create an entity if not available, if available return the value. If the call is run simultaneously, we might end up with a lot of created entities. With Queue, you can add any call to the queue, so they are waiting for the first find or create operation to be done before returning the entity. see [unique user id test](/tests/unique-user-id.test.ts)
 
 ```sh
 yarn add push-and-wait-queue
@@ -12,9 +12,15 @@ yarn add push-and-wait-queue
 npm install push-and-wait-queue
 ```
 
+Browser, you can use [UNPKG](https://unpkg.com/) or [JSDelivr](https://www.jsdelivr.com/)
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/push-and-wait-queue@latest/build/index.min.js"></script>
+```
+
 ## APIs
 
-### Initializing
+### Init
 
 Takes an optional `options` parameter
 
