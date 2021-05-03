@@ -27,19 +27,9 @@ Browser, you can use [UNPKG](https://unpkg.com/) or [JSDelivr](https://www.jsdel
 
 ### Init
 
-Takes an optional `options` parameter
-
 ```ts
-new PushAndWaitQueue(options: IPushAndWaitQueueOptions)
-
-interface IPushAndWaitQueueOptions {
-    promise?: PromiseConstructor
-}
+const queue = new PushAndWaitQueue();
 ```
-
-| Option    | Description                                                 |
-| --------- | ----------------------------------------------------------- |
-| `promise` | Custom promise implementation. Defaults to global `Promise` |
 
 ### Enqueue tasks
 
