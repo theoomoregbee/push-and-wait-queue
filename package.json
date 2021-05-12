@@ -17,6 +17,11 @@
     "type": "git",
     "url": "https://github.com/theoomoregbee/push-and-wait-queue.git"
   },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
   "keywords": [
     "queue",
     "promise",
