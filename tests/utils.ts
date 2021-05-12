@@ -1,9 +1,7 @@
-import { randomBytes } from 'crypto'
+import shortId from 'shortid'
 
 export const generateId = async (): Promise<string> => {
-  return await new Promise<string>((resolve, reject) => {
-    randomBytes(16, (err, token) => {
-      (err != null) ? reject(err) : resolve(token.toString('hex'))
-    })
+  return await new Promise<string>((resolve) => {
+    resolve(shortId.generate())
   })
 }
